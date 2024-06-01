@@ -1,0 +1,63 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: linear-gradient(to left, #5c5c5c, #00718d);
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container{
+    display: grid;
+    margin-top: 3rem;
+    grid-template-columns: repeat(4, 4rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 4rem);
+    grid-gap: 5px;
+    background-color: rgba(255, 255, 255);
+    padding: 10px;
+    box-shadow: 0 10px 20px #000000;
+}
+
+.output{
+    grid-column: 1 / -1;
+    /* background-color: rgba(0, 0, 0, .70); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .output-prev{
+    font-size: 1rem;
+    opacity: .5;
+}
+.output .output-current{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.span-2{
+    grid-column: span 2;
+}
+
+.grid-container > button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    /* font-weight: bold; */
+    box-shadow: 0 4px 6px #c0c0c0;
+    font-size: 16px;
+}
+
+.grid-container > button:hover,
+.grid-container > button:focus{
+    opacity: 0.6;
+}
+
+.btn-actions{
+    background: #00f7ff;
+}
