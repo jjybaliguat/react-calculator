@@ -12,8 +12,8 @@ body{
 .grid-container{
     display: grid;
     margin-top: 3rem;
-    grid-template-columns: repeat(4, 4rem);
-    grid-template-rows: minmax(7rem, auto) repeat(5, 4rem);
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 5rem);
     grid-gap: 5px;
     background-color: rgba(255, 255, 255);
     padding: 10px;
@@ -33,10 +33,10 @@ body{
 
 .output .output-prev{
     font-size: 1rem;
-    opacity: .5;
+    opacity: .6;
 }
 .output .output-current{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     font-weight: bold;
 }
 
